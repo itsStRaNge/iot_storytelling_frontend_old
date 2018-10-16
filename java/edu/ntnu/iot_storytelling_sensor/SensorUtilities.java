@@ -44,7 +44,7 @@ public abstract class SensorUtilities extends FileManager implements View.OnDrag
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if(FirebaseManager.isSensor()) {
+        if(Configuration.isSensor()) {
             /* display sensor background */
             findViewById(R.id.sensor_overlay).setVisibility(View.VISIBLE);
 

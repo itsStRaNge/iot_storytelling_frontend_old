@@ -25,7 +25,7 @@ public class MainActivity extends SensorUtilities{
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
 
-        if(FirebaseManager.isSensor()){
+        if(Configuration.isSensor()){
             /* Application is a Sensor Application
             * Setup QR Scan Button because of the Intent Result we get
             * */

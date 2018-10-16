@@ -1,5 +1,7 @@
 package edu.ntnu.iot_storytelling_sensor;
 
+import android.bluetooth.BluetoothClass;
+
 public final class Configuration {
 
     /* ALLOWED TO CHANGE
@@ -35,4 +37,15 @@ public final class Configuration {
     public static final String SRC_AUDIO_KEY = "Audio";
     public static final String SRC_IMAGE_KEY = "Images";
     public static final String SRC_TEXT_KEY = "Text";
+
+    public static boolean isSensor(){
+        return DEVICE_TYPE.equals("Sensor");
+    }
+
+    public static String node(){
+        if(PRODUCTIVE)
+            return PRODUCTIVE_NODE;
+        else
+            return DEVELOP_NODE;
+    }
 }
