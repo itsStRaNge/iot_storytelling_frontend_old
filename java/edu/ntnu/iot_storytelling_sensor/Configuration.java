@@ -1,7 +1,5 @@
 package edu.ntnu.iot_storytelling_sensor;
 
-import android.bluetooth.BluetoothClass;
-
 public final class Configuration {
 
     /* ALLOWED TO CHANGE
