@@ -9,7 +9,7 @@ public final class Configuration {
     public static final boolean PRODUCTIVE = false;
 
     // Sensor for Sensor Application, Actuator for Actuator Application
-    public static final String DEVICE_TYPE = "Sensor";
+    public static final String DEVICE_TYPE = "Actuator";
 
     // refers to the number in the Actuator list on firebase realtime database
     // Only needed if Actuator is selected

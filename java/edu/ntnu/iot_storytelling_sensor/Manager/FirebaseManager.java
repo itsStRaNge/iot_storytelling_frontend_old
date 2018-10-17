@@ -26,13 +26,12 @@ public class FirebaseManager implements ValueEventListener {
         m_context = context;
 
         DatabaseReference database = FirebaseDatabase.getInstance().getReference(Configuration.node());
-        database = database;
 
         DatabaseReference host = database.child(HOST_KEY);
         host.addValueEventListener(this);
 
         DatabaseReference device = database.child(DEVICE_TYPE);
-        if(!Configuration.isSensor()) device = database.child(DEVICE_NUMBER);
+        if(!Configuration.isSensor()) device = device.child(DEVICE_NUMBER);
         device.addValueEventListener(this);
     }
 
